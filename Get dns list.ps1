@@ -1,0 +1,1 @@
+﻿Get-ADComputer -filter * | Format-List DNS*

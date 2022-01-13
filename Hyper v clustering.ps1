@@ -1,0 +1,1 @@
+﻿invoke-command clvm1, clvm2 {Install-WindowsFeature failover-clustering}
