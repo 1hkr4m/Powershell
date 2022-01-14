@@ -1,0 +1,8 @@
+From within the Ubuntu virtual machine, open Terminal
+Type sudo vi /etc/default/grub
+Find GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+Append that line with video=hyperv_fb:[specify resolution, e.g. 1024x768]
+Here is what it might look like: GRUB_CMDLINE_LINUX_DEFAULT="quiet splash video=hyperv_fb:1024x768"
+Save changes and exit
+Run the following command: sudo update-grub
+Restart the VM
